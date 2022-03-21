@@ -21,6 +21,10 @@ namespace ServerCore
                 int desired = 1;
                 if(Interlocked.CompareExchange(ref _locked, desired, expected) == expected)
                     break;
+
+                //Thread.Sleep(1); //무조건 휴식
+                //Thread.Sleep(0); //조건부 양보 
+                Thread.Yield(); //관대한 양보
             }
         }
 
