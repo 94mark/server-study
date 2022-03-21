@@ -8,10 +8,12 @@ namespace ServerCore1
     {
         //bool <- 커널
         AutoResetEvent _available = new AutoResetEvent(true);
+        //ManualResetEvent _available = new ManualResetEvent(true);
 
         public void Acquire()
         {
             _available.WaitOne(); //입장 시도
+            //_available = Reset(); // 문을 닫음
         }
 
         public void Release()
