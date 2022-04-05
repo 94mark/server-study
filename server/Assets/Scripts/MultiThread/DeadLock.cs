@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ServerCore3
+namespace ServerCore
 {
     class SessionManager
     {

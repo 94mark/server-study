@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ServerCore4
+namespace ServerCore
 {
     //스핀락 정책(5000번 -> yield
     class Lock
